@@ -1,0 +1,12 @@
+.container{
+    padding: 10px 20px;
+}
+
+.button-padding{
+    padding-right: 5px;
+}
+
+
+.invalid {
+    color: red;
+}

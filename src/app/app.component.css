@@ -1,0 +1,11 @@
+.navbar-default {
+    background-color: cornflowerblue !important;
+}
+
+.navbar-default .navbar-brand {
+    color: black !important;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: black !important;
+}

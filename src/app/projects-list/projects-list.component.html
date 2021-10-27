@@ -1,0 +1,42 @@
+
+<div class="container">
+    <div class="button_Container">  
+        <button type="button" class="btn btn-success" (click)="create()">Create</button>
+    </div>
+
+    <div *ngIf="emptyStateMessage">
+        <div class="container">
+          <h2>No projects found.</h2>
+          <div class="panel panel-default">
+          </div>
+        </div>
+    </div>
+    <div *ngIf="!emptyStateMessage">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Status</th>
+            <th scope="col">Date Created</th>
+            <th scope="col">Archive</th>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let list of projects | keyvalue">
+                <th scope="row">{{list.key}}</th>
+                <td>{{list.value.name}}</td>
+                <td>{{list.value.status}}</td>
+                <td>{{list.value.dateCreated}}</td>
+                <td><button type="button" class="btn btn-warning" (click)="onArchive(list)">Archive</button></td>
+              </tr>
+    
+        </tbody>
+      </table>
+    </div>
+
+</div>
+
+
+
+

@@ -1,0 +1,12 @@
+<h2 >{{myDialogData.title}}</h2>
+
+<mat-dialog-content>
+  
+<p>{{myDialogData.text}}</p>
+ 
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button class="btn btn-danger space" (click)="close()">Close</button>
+    <button class="btn btn-primary" (click)="save()">Save</button>
+</mat-dialog-actions>
